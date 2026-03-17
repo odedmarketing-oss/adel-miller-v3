@@ -462,10 +462,10 @@
       .profile-photo { width: 100%; max-width: 360px; height: 300px; }
       .recommended-grid { grid-template-columns: 1fr 1fr; }
       .footer-inner { grid-template-columns: 1fr 1fr; }
-      .gallery-grid { justify-content: center; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
     }
     @media (max-width: 480px) {
-      .gallery-item { width: calc(50% - 8px); height: 160px; }
+      .gallery-item { width: 100%; max-width: 100%; height: 180px; }
       .recommended-grid { grid-template-columns: 1fr 1fr; }
       .footer-inner { grid-template-columns: 1fr; }
     }
